@@ -1,0 +1,25 @@
+{
+    "manifest_version":2,
+    "name":"Budget Manager",
+    "version":"1.0",
+    "description":"Extention to track overall spendings.",
+    "icons": {
+        "128": "./icons/budget128.png",
+        "48": "./icons/budget48.png",
+        "16": "./icons/budget16.png"
+    },
+    "browser_action":{
+        "default_icon": "./icons/budget16.png",
+        "default_popup": "./popup.html"
+    },
+    "options_page":"./options.html",
+    "background":{
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+    "permissions":[
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+}
